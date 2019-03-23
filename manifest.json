@@ -1,0 +1,22 @@
+{
+  "name": " Shaktishaali Choukidaar",
+  "version": "1.1",
+  "description": "shakti shaali chowkidar to check WebApp vulnerabilities",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "browser_action": {
+      "default_title": "Choukidar",
+      "default_icon": "favicon.ico",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+        "background.js",
+        "jq.js"
+    ]
+  },
+    "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
